@@ -23,6 +23,41 @@ This project aims to predict insurance costs using machine learning models and v
   - `README.md`: This README file.
   - `requirements.txt`: List of dependencies required for the project.
 
+## Problem Statement
+
+The goal of this project is to predict the insurance costs for individuals based on various features such as age, Height, Weight, Diabetes, Blood Pressure problems, Any Allergies, Any Tranplants done, Any chronic disease and number of surgeries.
+Accurately predicting insurance costs can help insurance companies to price their policies more effectively and enable customers to get better insights into their insurance costs.
+
+## Steps Taken to Solve the Problem
+
+### 1. Exploratory Data Analysis (EDA)
+
+- **Data Loading:** Loaded the dataset from `.csv` files in the `DATA` folder.
+- **Data Cleaning:** Handled missing values, outliers, and incorrect data types.
+- **Visualization:** Used various plots and charts to understand the distribution of features and their relationships with the target variable (insurance cost).
+
+### 2. Hypothesis Testing
+
+- **Feature Relationships:** Conducted hypothesis tests to determine the statistical significance of the relationships between features and the target variable.
+- **Correlation Analysis:** Analyzed correlations to identify important features for the prediction model.
+
+### 3. Machine Learning Modeling
+
+- **Pre-processing:** Applied data pre-processing steps including scaling, encoding categorical variables, and feature engineering.
+- **Model Training:** Trained multiple models including Linear Regression, Random Forest, and Gradient Boosting.
+- **Model Evaluation:** Evaluated models using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), and R-squared. Selected the best model based on performance metrics.
+
+### Target Metric and Scores
+
+The primary target metric for this project is the Mean Absolute Error (MAE), as it provides a straightforward interpretation of the average error in the predicted insurance costs.
+
+
+### 4. Deployment
+
+- **Flask App:** Developed a Flask application (`flaskapp.py`) to serve the model and provide an interface for users to input their data and get predictions.
+- **Web Interface:** Created an HTML template (`index.html`) for the web interface.
+- **Model Integration:** Integrated the trained model (`best_model.pkl`) into the Flask app for real-time predictions.
+
 ## Installation
 
 To set up the project, install the necessary packages using pip:
