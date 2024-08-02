@@ -6,3 +6,4 @@ matplotlib
 seaborn==0.12.2
 scipy
 xgboost
+flask
